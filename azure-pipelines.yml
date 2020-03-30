@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
 trigger:
-- '*'
+'*'
 
 pool:
   vmImage: 'ubuntu-16.04'
@@ -54,4 +54,3 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
-This file looks like the original, except that it replaces t
